@@ -10,7 +10,9 @@ function create(reservation) {
   }
 
   function read(reservation_id) {
-    return knex(tableName).where({ reservation_id }).first();
+    return knex(tableName)
+    .where({ reservation_id })
+    .first();
   }
 
 function list(date) {
@@ -20,9 +22,6 @@ function list(date) {
     .whereNot({ status: "finished" })
     .orderBy("reservation_time");
 }
-
-
-
 
 
 function search(mobile_number) {
