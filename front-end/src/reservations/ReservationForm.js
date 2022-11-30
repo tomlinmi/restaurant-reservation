@@ -5,8 +5,8 @@ function ReservationForm({changeHandler, formData}){
       <>
         <form id="reservationForm">
           <div className="form-row">
-            <div className="col-md">
-              <label className="form-label mr-2" htmlFor="first_name">
+            <div className="form-group col-md-2">
+              <label className="form-label mr-2" htmlFor="first_name" >
                 First Name
               </label>
               <input
@@ -19,7 +19,7 @@ function ReservationForm({changeHandler, formData}){
                 value={formData.first_name}
               />
             </div>
-            <div className="col-md">
+            <div className="col-md-2">
               <label className="form-label mr-2" htmlFor="last_name">
                 Last Name  
                 </label>  
@@ -33,7 +33,7 @@ function ReservationForm({changeHandler, formData}){
                 value={formData.last_name}
               />
             </div>
-            <div className="col-md">
+            <div className="col-md-2">
               <label className="form-label mr-2" htmlFor="mobile_number">
                 Mobile Number
               </label>
@@ -50,7 +50,7 @@ function ReservationForm({changeHandler, formData}){
             </div>
           </div>
           <div className="form-row mt-3 mb-3">
-            <div className="col-sm">
+            <div className="col-md-2">
               <label className="form-label mr-2" htmlFor="reservation_date">
                Reservation Date
               </label>
@@ -64,7 +64,7 @@ function ReservationForm({changeHandler, formData}){
                 value={formData.reservation_date}
               />
             </div>
-            <div className="col-sm">
+            <div className="col-md-2">
               <label className="form-label mr-2" htmlFor="reservation_time">
                 Reservation Time
               </label>
@@ -77,7 +77,7 @@ function ReservationForm({changeHandler, formData}){
                 value={formData.reservation_time}
               />
             </div>
-            <div className="col-sm">
+            <div className="col-md-2">
               <label className="form-label mr-2" htmlFor="people">
                 Party Size #
               </label>
@@ -85,7 +85,7 @@ function ReservationForm({changeHandler, formData}){
                 id="people"
                 name="people"
                 type="number"
-                placeholder="Party size"
+                placeholder=""
                 required
                 onChange={changeHandler}
                 value={formData.people}

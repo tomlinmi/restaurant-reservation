@@ -73,21 +73,21 @@ function Dashboard({ date }) {
       
         <button
           type="button"
-          className="btn btn-secondary"
+          className="btn btn-secondary mr-3"
           onClick={() => history.push(`/dashboard?date=${previous(date)}`)}
         >
           Previous
         </button>
         <button
           type="button"
-          className="btn btn-secondary"
+          className="btn btn-success mr-3"
           onClick={() => history.push("/dashboard")}
         >
           Today
         </button>
         <button
           type="button"
-          className="btn btn-secondary"
+          className="btn btn-primary mr-3"
           onClick={() => history.push(`/dashboard?date=${next(date)}`)}
         >
           Next
@@ -103,9 +103,11 @@ function Dashboard({ date }) {
       <ErrorAlert error={tablesError} />
       <ListReservations reservations={reservations} cancelHandler={cancelHandler}/>
       <ListTable tables={tables} finishHandler={finishHandler} />
+
       {JSON.stringify(reservations)}
     </main>
   );
 }
 
 export default Dashboard;
+//

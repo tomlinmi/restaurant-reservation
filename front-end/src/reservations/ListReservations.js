@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ListReservations({ reservations, cancelHandler }) {
+function ListReservations({ reservations, cancelHandler }) {
   const path = window.location.pathname;
 
   return (
@@ -86,3 +86,5 @@ export default function ListReservations({ reservations, cancelHandler }) {
     </>
   );
 }
+
+export default ListReservations;
