@@ -41,28 +41,28 @@ function ListReservations({ reservations, cancelHandler }) {
                     reservation.status !== "cancelled" && (
                       <a
                         style={{ width: 70 }}
-                        className="btn btn-success"
+                        className="btn btn-success mr-2"
                         href={`/reservations/${reservation.reservation_id}/seat`}
                         role="button"
                       >
                         Seat
                       </a>
                     )}
-                  {reservation.status === "booked" && (
+                  {reservation.status === "reserved" && (
                     <a
                       style={{ width: 70 }}
-                      className="btn btn-secondary"
+                      className="btn btn-secondary mr-2"
                       href={`/reservations/${reservation.reservation_id}/edit`}
                       role="button"
                     >
                       Edit
                     </a>
                   )}
-                  {reservation.status === "booked" && (
+                  {reservation.status === "reserved" && (
                     <button
                       type="button"
                       style={{ width: 70 }}
-                      className="btn btn-danger"
+                      className="btn btn-danger mr-2"
                       data-reservation-id-cancel={reservation.reservation_id}
                       onClick={() => {
                         window.confirm(
