@@ -1,0 +1,51 @@
+[
+    {
+        "table_name": "FrontBar #1",
+        "capacity": 1
+    },
+    {
+        "table_name": "FrontBar #2",
+        "capacity": 1
+    },
+    {
+        "table_name": "FrontBar #3",
+        "capacity": 1
+    },
+    {
+        "table_name": "FrontBar #4",
+        "capacity": 1
+    },
+
+    {
+        "table_name": "#1",
+        "capacity": 6
+    },
+    {
+        "table_name": "#2",
+        "capacity": 6
+    },
+    {
+        "table_name": "#3",
+        "capacity": 6
+    },
+    {
+        "table_name": "#4",
+        "capacity": 6
+    },
+    {
+        "table_name": "RearBar #1",
+        "capacity": 1
+    },
+    {
+        "table_name": "RearBar #2",
+        "capacity": 1
+    },
+    {
+        "table_name": "RearBar #3",
+        "capacity": 1
+    },
+    {
+        "table_name": "RearBar #4",
+        "capacity": 1
+    }
+]
