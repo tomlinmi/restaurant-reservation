@@ -3,7 +3,8 @@ const tableName = "tables"
 
 
 function list() {
-  return knex(tableName).orderBy("table_name");
+  return knex(tableName)
+  .orderBy("table_name");
 }
 
 function read(table_id) {
