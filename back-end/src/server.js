@@ -3,7 +3,7 @@ const { PORT = 5001 } = process.env;
 const app = require("./app");
 const knex = require("./db/connection");
 
-knex.migrate
+knex.migrate //don't start server if migration fails
   .latest()
   .then((migrations) => {
     console.log("migrations", migrations);
