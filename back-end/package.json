@@ -1,7 +1,7 @@
 {
   "name": "restaurant-reservation-back-end",
   "version": "1.0.0",
-  "description": "Starter code for restaurant reservation backend",
+  "description": "restaurant reservation backend",
   "main": "src/server.js",
   "repository": {
     "type": "git",
