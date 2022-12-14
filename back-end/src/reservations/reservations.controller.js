@@ -146,6 +146,8 @@ function resBooked(req, res, next) {
     });
 }
 
+//export modules
+
 module.exports = {
   list: [asyncErrorBoundary(queryInput), asyncErrorBoundary(list)],
   create: [
