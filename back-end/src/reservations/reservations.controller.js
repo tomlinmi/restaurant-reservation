@@ -159,6 +159,7 @@ module.exports = {
     hasProperties("people"),
     validDateTime,
     validPeople,
+    queryInput,
     resBooked,
     asyncErrorBoundary(create),
   ],
