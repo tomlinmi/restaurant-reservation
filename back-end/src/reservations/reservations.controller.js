@@ -173,6 +173,7 @@ module.exports = {
     hasProperties("people"),
     validDateTime,
     validPeople,
+    queryInput,
     asyncErrorBoundary(reservationExists),
     asyncErrorBoundary(update),
   ],
