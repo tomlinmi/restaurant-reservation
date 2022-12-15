@@ -59,7 +59,7 @@ function SearchReservations() {
     <>
       {displayResults ? (
         <div className="row">
-          <h1>Found Resevations</h1>
+          <h1>Found Reservations</h1>
           <div>
             <button
               type="button"

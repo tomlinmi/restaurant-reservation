@@ -92,18 +92,6 @@ async function validCapacity(req, res, next){
   next();
 }
 
-/*
-async function sufficentCapacity(req, res, next){
-  const { table, reservation } = req.body.data;
-  if(reservation.people > table.capacity){
-    next({
-      status: 400,
-      message: `Table does not have sufficient capacity.`
-    })
-  }
-  next();
-}
-*/
 async function isSeated(req, res, next) {
   if(res.locals.reservation.status === "seated"){
     next({
@@ -162,7 +150,6 @@ module.exports = {
     asyncErrorBoundary(isSeated),
     asyncErrorBoundary(isOccupied),
     asyncErrorBoundary(validSeating),
-   // asyncErrorBoundary(sufficentCapacity),
     asyncErrorBoundary(update)
    
   ],

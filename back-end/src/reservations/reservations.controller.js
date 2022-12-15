@@ -114,6 +114,19 @@ function validPeople(req, res, next) {
   next();
 }
 
+/*
+function validMobileNumber(req, res, next) {
+  const { mobile_number } = req.body.data;
+  if (typeof mobile_number !== "number") {
+    next({
+      status: 400,
+      message: `phone number must be a number.`,
+    });
+  }
+  next();
+}
+*/
+
 function validStatus(req, res, next) {
   const statuses = ["seated", "booked", "finished", "cancelled"];
   const { status } = req.body.data;
@@ -159,7 +172,7 @@ module.exports = {
     hasProperties("people"),
     validDateTime,
     validPeople,
-    queryInput,
+    //validMobileNumber,
     resBooked,
     asyncErrorBoundary(create),
   ],
@@ -173,7 +186,7 @@ module.exports = {
     hasProperties("people"),
     validDateTime,
     validPeople,
-    queryInput,
+    //validMobileNumber,
     asyncErrorBoundary(reservationExists),
     asyncErrorBoundary(update),
   ],
