@@ -67,7 +67,7 @@ function SeatReservations() {
               onChange={changeHandler}
               value={formData.table_id}
             >
-              <option defaultValue>Open tables</option>
+              <option defaultValue>Open Tables</option>
               {tables.map(
                 (table) =>
                   table.reservation_id === null && (
@@ -91,6 +91,4 @@ function SeatReservations() {
     </div>
   );
 }
-
-
 export default SeatReservations;

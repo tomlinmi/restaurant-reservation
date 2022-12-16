@@ -24,6 +24,9 @@ function CreateReservations() {
     if (target.name === "people") {
       value = Number(value);
     }
+      if (target.name ==="mobile_number"){
+        value = value.replace(/\D/g,'').slice(0,10);
+      }
     setFormData({
       ...formData,
       [target.name]: value,
